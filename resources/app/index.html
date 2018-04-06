@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Gra dla Jasia</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="myScript.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Gra dla Jasia</h1>
+
+        <div class="game-info">
+            <span class="game-info-text">LICZBA PRÓB:</span>
+            <span class='game-score'>0</span>
+        </div>
+
+        <div>
+            <button class="restart"></button>
+        </div>
+    </header>
+
+    <div class="hr"></div>
+
+    <div class="game">
+        <div class="game-choice">
+            <button class="button-choice" data-photos="animals"></button>
+            <button class="button-choice" data-photos="countries"></button>
+            <button class="button-choice" data-photos="dino"></button>
+            <button class="button-choice" data-photos="vehicles"></button>
+        </div>
+        <div class="game-board"></div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- modal content - finish game -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Wygrałeś Jasiu !!!</h2>
+            </div>
+
+            <div class="modal-body">
+                <p>...w <span class='game-score-modal'>0</span> próbach.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
